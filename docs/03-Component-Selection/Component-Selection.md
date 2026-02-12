@@ -14,12 +14,6 @@ The following sections are the selected major components necessary for  .....
 
 For more details, review the ["Appendix - Component Selection Process - Power Mangement"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management) selection.
 
-### Sensor
-
-(**remove this note/placeholder**: if applicable, this is where your  **SELECTED** sensor is shown. Otherwise, remove this section.)
-
-For more details, review the ["Appendix - Component Selection Process - Sensor"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#sensor) selection.
-
 ### Actuator
 
 (**remove this note/placeholder**: if applicable, this is where your **Selected** the actuator items go, which includes both the driver and motor. Otherwise, remove this section.)
@@ -29,11 +23,7 @@ For more details, review the ["Appendix - Component Selection Process - Actuator
 -----------
 > Remove the following before submitting! Use them to present the selected components
 
-### Style 1
-
-> This is the example found in the assignment, uses more html
-
-*Table 1: Example component selection*
+*Table 1: Motor Driver Table*
 
 **Motor Driver**
 
@@ -43,7 +33,9 @@ For more details, review the ["Appendix - Component Selection Process - Actuator
 | ![](MAX6650EUB+T.png)<br> MAX6650EUB+T Surface Mount Driver<br>$8.82/each<br>[link to product](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX6650EUB-T/1521889)                 | \* Brushless<br>\* Can cover multiple parallel motors <br>\* Uses I2C Interface                                               | \* Relatively Expensive<br>\* Utilizes tachometer (could be difficult to make small adjustments with). |
 | ![](A3946KLPTR-T.png)<br> A3946KLPTR-T Surface Mount Driver<br>$3.42/each<br>[link to product](https://www.digikey.com/en/products/detail/allegro-microsystems/A3946KLPTR-T/1006258)                 | \* High voltage option [^1]<br>\* Brushless<br>\* Overheat protections <br>\* Uses MOSFET                                               | \* More complex<br>\* Utilizes higher voltage |
 
-**Rationale:** A clock oscillator is easier ....
+**Rationale:** The MAX driver may be more expensive than alternatives, but it makes up for it by being adjustable, accurate, and easy to use.
+
+*Table 2: Gearmotor Table*
 
 **Gearmotor**
 
@@ -51,25 +43,6 @@ For more details, review the ["Appendix - Component Selection Process - Actuator
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | ![](FIT0441.png)<br> FIT0441 Gearmotor<br>$19.90/each<br>[link to product](https://www.digikey.com/en/products/detail/dfrobot/FIT0441/6588579)                 | \* Simple [^1]<br>\* Brushless<br>\*Powerful                                                | \* May not have accuracy required<br>\* Incremental |
 | ![](SER0070.png)<br> SER0070 Servo Motor <br>$24.88/each<br>[link to product](https://www.mouser.com/ProductDetail/DFRobot/SER0070?qs=6avfeC6zeS5mmJI6Z%252BxOKw%3D%3D)                 | \* Brushless<br>\* Servo Motor <br>\* Accurate and powerful                                               | \* Relatively Expensive<br>\* No datasheet |
-| ![](324.png)<br> 324 Stepper Motor <br>$3.42/each<br>[link to product](https://www.digikey.com/en/products/detail/adafruit-industries-llc/324/5022791)                 | \* Simple [^1]<br>\* 200 Steps per revolution (accurate)<br>\* Inexpensive                                               | \* Not super accurate <br>\* Not super powerful |
+| ![](324.png)<br> 324 Stepper Motor <br>$14.00/each<br>[link to product](https://www.digikey.com/en/products/detail/adafruit-industries-llc/324/5022791)                 | \* Simple [^1]<br>\* 200 Steps per revolution (accurate)<br>\* Inexpensive                                               | \* Not super accurate <br>\* Not super powerful |
 
-### Style 2
-
-> Also acceptable, more markdown friendly
-
-**External Clock Module**
-
-1. XC1259TR-ND surface mount crystal
-
-    ![](image1.png)
-
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
-
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
-
-**Rationale:** A clock oscillator is easier ...
+**Rationale:** The FIT DC gear motor is relatively simple while maintaining high torque and easily optimized accuracy.
