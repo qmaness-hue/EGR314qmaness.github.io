@@ -45,12 +45,12 @@ For more details, review the ["Appendix - Component Selection Process - Actuator
 
 **Rationale:** A clock oscillator is easier ....
 
-**Motor Driver**
+**Gearmotor**
 
 | **Component**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](TC647BEOATR.png)<br> FIT0441 Gearmotor<br>$19.90/each<br>[link to product](https://www.digikey.com/en/products/detail/dfrobot/FIT0441/6588579)                 | \* Simple [^1]<br>\* Brushless<br>\*Powerful                                                | \* May not have accuracy required<br>\* Incremental |
-| ![](MAX6650EUB+T.png)<br> MAX6650EUB+T Surface Mount Driver<br>$8.82/each<br>[link to product](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX6650EUB-T/1521889)                 | \* Brushless<br>\* Can cover multiple parallel motors <br>\* Uses I2C Interface                                               | \* Relatively Expensive<br>\* Utilizes tachometer (could be difficult to make small adjustments with). |
+| ![](FIT0441.png)<br> FIT0441 Gearmotor<br>$19.90/each<br>[link to product](https://www.digikey.com/en/products/detail/dfrobot/FIT0441/6588579)                 | \* Simple [^1]<br>\* Brushless<br>\*Powerful                                                | \* May not have accuracy required<br>\* Incremental |
+| ![](SER0070.png)<br> SER0070 Servo Motor <br>$24.88/each<br>[link to product](https://www.mouser.com/ProductDetail/DFRobot/SER0070?qs=6avfeC6zeS5mmJI6Z%252BxOKw%3D%3D)                 | \* Brushless<br>\* Can cover multiple parallel motors <br>\* Uses I2C Interface                                               | \* Relatively Expensive<br>\* Utilizes tachometer (could be difficult to make small adjustments with). |
 | ![](A3946KLPTR-T.png)<br> A3946KLPTR-T Surface Mount Driver<br>$3.42/each<br>[link to product](https://www.digikey.com/en/products/detail/allegro-microsystems/A3946KLPTR-T/1006258)                 | \* High voltage option [^1]<br>\* Brushless<br>\* Overheat protections <br>\* Uses MOSFET                                               | \* More complex<br>\* Utilizes higher voltage |
 
 ### Style 2
