@@ -32,5 +32,6 @@ The selected motor driver is compatible with the selected DIP-PIC18F47Q10 microc
 | Pin 11 (DIS) | Disables outputs | Not sure|
 | Pin 12 (PWM) | Pulse Width Modulation | Not Connected |
 
+**Selected Microcontroller**
 
-The microcontroller I selected for the motor system will be the DIP microcontroller provided in class. Based on my research, the motor driver and gearmotor I plan to use are compatible with the PIC18F47Q10. The motor driver I selected--the MAX6650EUB+T--utilizes the I2C interface. This interface is the one I personally have the most experience with, and therefore suits the DIP well. All parameters appear to match up, as I did the component selection with the DIP given in class in mind.
+The microcontroller I selected for the motor system will be the DIP microcontroller provided in class. The motor driver and gearmotor I selected are compatible with the PIC18F47Q10. The motor driver I selected--the IFX9201SGAUMA1--utilizes the SPI interface. This interface is covered in depth during class, making it a well understood software. All parameters appear to match up, as I did the component selection with the DIP given in class in mind.
