@@ -20,19 +20,7 @@ The following sections are the selected major components necessary for the motor
 
 ### Actuators
 
-*Table 2: Motor Driver Table*
-
-**Motor Driver**
-
-| **Component**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](TC647BEOATR.png)<br> TC647BEOATR Surface Mount Driver<br>$1.64/each<br>[link to product](https://www.digikey.com/en/products/detail/microchip-technology/TC647BEOATR/562490)                 | \* Brushless<br>\* Meets surface mount constraint of project <br>\* Inexpensive                                               | \* Made specifically for fans<br>\* Needs parallel interface. |
-| ![](MAX6650EUB+T.png)<br> MAX6650EUB+T Surface Mount Driver<br>$8.82/each<br>[link to product](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX6650EUB-T/1521889)                 | \* Brushless<br>\* Can cover multiple parallel motors <br>\* Uses I2C Interface                                               | \* Relatively Expensive<br>\* Utilizes tachometer (could be difficult to make small adjustments with). |
-| ![](A3946KLPTR-T.png)<br> A3946KLPTR-T Surface Mount Driver<br>$3.42/each<br>[link to product](https://www.digikey.com/en/products/detail/allegro-microsystems/A3946KLPTR-T/1006258)                 | \* High voltage option [^1]<br>\* Brushless<br>\* Overheat protections <br>\* Uses MOSFET                                               | \* More complex<br>\* Utilizes higher voltage |
-
-**Rationale:** The MAX driver may be more expensive than alternatives, but it makes up for it by being adjustable, accurate, and easy to use.
-
-*Table 3: Gearmotor Table*
+*Table 2: Gearmotor Table*
 
 **Gearmotor**
 
@@ -43,3 +31,16 @@ The following sections are the selected major components necessary for the motor
 | ![](324.png)<br> 324 Stepper Motor <br>$14.00/each<br>[link to product](https://www.digikey.com/en/products/detail/adafruit-industries-llc/324/5022791)                 | \* Simple <br>\* 200 Steps per revolution (accurate)<br>\* Inexpensive                                               | \* Not super accurate <br>\* Not super powerful |
 
 **Rationale:** The 324 Stepper motor is simple while maintaining high torque and easily optimized accuracy.
+
+*Table 3: Motor Driver Table*
+
+**Motor Driver**
+
+| **Component**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![](TC647BEOATR.png)<br> TC647BEOATR Surface Mount Driver<br>$1.64/each<br>[link to product](https://www.digikey.com/en/products/detail/microchip-technology/TC647BEOATR/562490)                 | \* Brushless<br>\* Meets surface mount constraint of project <br>\* Inexpensive                                               | \* Made specifically for fans<br>\* Needs parallel interface. |
+| ![](MAX6650EUB+T.png)<br> MAX6650EUB+T Surface Mount Driver<br>$8.82/each<br>[link to product](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX6650EUB-T/1521889)                 | \* Brushless<br>\* Can cover multiple parallel motors <br>\* Uses I2C Interface                                               | \* Relatively Expensive<br>\* Utilizes tachometer (could be difficult to make small adjustments with). |
+| ![](A3946KLPTR-T.png)<br> A3946KLPTR-T Surface Mount Driver<br>$3.42/each<br>[link to product](https://www.digikey.com/en/products/detail/allegro-microsystems/A3946KLPTR-T/1006258)                 | \* High voltage option <br>\* Brushless<br>\* Overheat protections <br>\* Uses MOSFET                                               | \* More complex<br>\* Utilizes higher voltage <br>\* Not compatible with stepper motor |
+| ![](IFX9201SGAUMA1.png)<br> IFX9201SGAUMA1 Surface Mount Driver<br>$3.55/each<br>[link to product](https://www.digikey.com/en/products/detail/infineon-technologies/IFX9201SGAUMA1/5415542)                 | \* Works with PIC <br>\* Works with stepper motor <br>\* Uses SPI or PWM <br>\* We already have it                                               | \* Difficult to use with MPLAB |
+
+**Rationale:** The IFX9201SGAUMA1 driver is easily accessible (thanks to it already being part of the class), works with the selected motor, and is highly adjustable.
