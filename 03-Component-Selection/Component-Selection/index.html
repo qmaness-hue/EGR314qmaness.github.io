@@ -966,36 +966,7 @@
 </table>
 <p><strong>Rationale:</strong> Seeing as we already have the LM2575, and it appears to be adequate for this project, it's as good a choice as any.</p>
 <h3 id="actuators">Actuators</h3>
-<p><em>Table 2: Motor Driver Table</em></p>
-<p><strong>Motor Driver</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Component</strong></th>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../TC647BEOATR.png" data-desc-position="bottom"><img alt="" src="../TC647BEOATR.png"></a><br> TC647BEOATR Surface Mount Driver<br>$1.64/each<br><a href="https://www.digikey.com/en/products/detail/microchip-technology/TC647BEOATR/562490">link to product</a></td>
-<td>* Brushless<br>* Meets surface mount constraint of project <br>* Inexpensive</td>
-<td>* Made specifically for fans<br>* Needs parallel interface.</td>
-</tr>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MAX6650EUB%2BT.png" data-desc-position="bottom"><img alt="" src="../MAX6650EUB%2BT.png"></a><br> MAX6650EUB+T Surface Mount Driver<br>$8.82/each<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX6650EUB-T/1521889">link to product</a></td>
-<td>* Brushless<br>* Can cover multiple parallel motors <br>* Uses I2C Interface</td>
-<td>* Relatively Expensive<br>* Utilizes tachometer (could be difficult to make small adjustments with).</td>
-</tr>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../A3946KLPTR-T.png" data-desc-position="bottom"><img alt="" src="../A3946KLPTR-T.png"></a><br> A3946KLPTR-T Surface Mount Driver<br>$3.42/each<br><a href="https://www.digikey.com/en/products/detail/allegro-microsystems/A3946KLPTR-T/1006258">link to product</a></td>
-<td>* High voltage option [^1]<br>* Brushless<br>* Overheat protections <br>* Uses MOSFET</td>
-<td>* More complex<br>* Utilizes higher voltage</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Rationale:</strong> The MAX driver may be more expensive than alternatives, but it makes up for it by being adjustable, accurate, and easy to use.</p>
-<p><em>Table 3: Gearmotor Table</em></p>
+<p><em>Table 2: Gearmotor Table</em></p>
 <p><strong>Gearmotor</strong></p>
 <table>
 <thead>
@@ -1024,6 +995,40 @@
 </tbody>
 </table>
 <p><strong>Rationale:</strong> The 324 Stepper motor is simple while maintaining high torque and easily optimized accuracy.</p>
+<p><em>Table 3: Motor Driver Table</em></p>
+<p><strong>Motor Driver</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../TC647BEOATR.png" data-desc-position="bottom"><img alt="" src="../TC647BEOATR.png"></a><br> TC647BEOATR Surface Mount Driver<br>$1.64/each<br><a href="https://www.digikey.com/en/products/detail/microchip-technology/TC647BEOATR/562490">link to product</a></td>
+<td>* Brushless<br>* Meets surface mount constraint of project <br>* Inexpensive</td>
+<td>* Made specifically for fans<br>* Needs parallel interface.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MAX6650EUB%2BT.png" data-desc-position="bottom"><img alt="" src="../MAX6650EUB%2BT.png"></a><br> MAX6650EUB+T Surface Mount Driver<br>$8.82/each<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX6650EUB-T/1521889">link to product</a></td>
+<td>* Brushless<br>* Can cover multiple parallel motors <br>* Uses I2C Interface</td>
+<td>* Relatively Expensive<br>* Utilizes tachometer (could be difficult to make small adjustments with).</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../A3946KLPTR-T.png" data-desc-position="bottom"><img alt="" src="../A3946KLPTR-T.png"></a><br> A3946KLPTR-T Surface Mount Driver<br>$3.42/each<br><a href="https://www.digikey.com/en/products/detail/allegro-microsystems/A3946KLPTR-T/1006258">link to product</a></td>
+<td>* High voltage option <br>* Brushless<br>* Overheat protections <br>* Uses MOSFET</td>
+<td>* More complex<br>* Utilizes higher voltage <br>* Not compatible with stepper motor</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="IFX9201SGAUMA1.png" data-desc-position="bottom"><img alt="" src="IFX9201SGAUMA1.png"></a><br> IFX9201SGAUMA1 Surface Mount Driver<br>$3.55/each<br><a href="https://www.digikey.com/en/products/detail/infineon-technologies/IFX9201SGAUMA1/5415542">link to product</a></td>
+<td>* Works with PIC <br>* Works with stepper motor <br>* Uses SPI or PWM <br>* We already have it</td>
+<td>* Difficult to use with MPLAB</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rationale:</strong> The IFX9201SGAUMA1 driver is easily accessible (thanks to it already being part of the class), works with the selected motor, and is highly adjustable.</p>
 
 
 
