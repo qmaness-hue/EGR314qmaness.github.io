@@ -42,4 +42,4 @@ The following sections are the selected major components necessary for the motor
 | ![](SER0070.png)<br> SER0070 Servo Motor <br>$24.88/each<br>[link to product](https://www.mouser.com/ProductDetail/DFRobot/SER0070?qs=6avfeC6zeS5mmJI6Z%252BxOKw%3D%3D)                 | \* Brushless<br>\* Servo Motor <br>\* Accurate and powerful                                               | \* Relatively Expensive<br>\* No datasheet |
 | ![](324.png)<br> 324 Stepper Motor <br>$14.00/each<br>[link to product](https://www.digikey.com/en/products/detail/adafruit-industries-llc/324/5022791)                 | \* Simple <br>\* 200 Steps per revolution (accurate)<br>\* Inexpensive                                               | \* Not super accurate <br>\* Not super powerful |
 
-**Rationale:** The FIT DC gear motor is relatively simple while maintaining high torque and easily optimized accuracy.
+**Rationale:** The 324 Stepper motor is simple while maintaining high torque and easily optimized accuracy.
