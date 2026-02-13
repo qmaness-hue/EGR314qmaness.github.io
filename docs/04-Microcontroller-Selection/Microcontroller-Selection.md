@@ -17,8 +17,9 @@ The selected motor driver is compatible with the selected DIP-PIC18F47Q10 microc
 
 **Pinout for IFX9201SGAUMA1**
 ![](IFX9201SGAUMA1pinout.png)
-| **Pin and Pin Function**                                                                                                                                                                                      | **Connection to PIC**                                                                                                                                    | 
+| **Pin and Pin Function**                                                                                                                                                                                      | **Connection**                                                                                                                                    | 
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| Pin 1 <br>Defines direction of motor current| \* GPIO RB4 |
+| Pin 1 (DIR)<br>Defines direction of motor current| \* PIC GPIO RB4 |
+| Pin 2 (VSO)<br>Supply for SO Output| Voltage Regulator|
 
 The microcontroller I selected for the motor system will be the DIP microcontroller provided in class. Based on my research, the motor driver and gearmotor I plan to use are compatible with the PIC18F47Q10. The motor driver I selected--the MAX6650EUB+T--utilizes the I2C interface. This interface is the one I personally have the most experience with, and therefore suits the DIP well. All parameters appear to match up, as I did the component selection with the DIP given in class in mind.
