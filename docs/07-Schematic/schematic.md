@@ -13,4 +13,4 @@ This schematic is designed to support a dual motor system driven by two separaat
 
 ## Resources
 
-The schematic as a PDF download is available [*here*](SchematicREVISION0.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic as a PDF download is available [*here*](SchematicREVISION0.pdf), and the Zip folder of the project [*here*](SchematicDesign314.zip).
