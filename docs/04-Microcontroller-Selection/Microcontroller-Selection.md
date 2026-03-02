@@ -10,7 +10,7 @@ The following section contains information regarding the selected microcontrolle
 
 The role of this subsystem of the EV Scope is to accurately recieve instruction from the human interface and camera (in some cases), and then interpret that information and make movements to accomplish the given need. The motor needs to accurately move in the manner that the user wishes--meaning that the motor both has to accurately interpret data from the camera and data from the human interface, and subsequently make precise movement to accomplish the task.
 
-**Selected Microcontroller**
+## Selected Microcontroller
 
 The microcontroller I selected for the motor system will be the DIP microcontroller provided in class. The motor driver and gearmotor I selected are compatible with the PIC18F47Q10. The motor driver I selected--the IFX9201SGAUMA1--utilizes the SPI interface. This interface is covered in depth during class, making it a well understood software. All parameters appear to match up, as I did the component selection with the DIP given in class in mind.
 
@@ -21,6 +21,8 @@ The selected motor driver is compatible with the selected DIP-PIC18F47Q10 microc
 
 **Pinout for IFX9201SGAUMA1**
 ![](IFX9201SGAUMA1pinout.png)
+
+## Pinout for Driver 1
 | **Pin**                                                                                                                                                                                      | **Pin Function**                                                                                                                                    | **Connection**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | Pin 1 (DIR)   | \* Defines direction of motor current | \* PIC GPIO RB4 |
@@ -35,4 +37,5 @@ The selected motor driver is compatible with the selected DIP-PIC18F47Q10 microc
 | Pin 10 (SCK) | \* Clock Input | \* RC3/SCK1|
 | Pin 11 (DIS) | \* Disables outputs | \* Not sure|
 | Pin 12 (PWM) | \* Pulse Width Modulation | \* Not Connected |
+
 
