@@ -23,16 +23,16 @@ The selected motor driver is compatible with the selected DIP-PIC18F47Q10 microc
 ![](IFX9201SGAUMA1pinout.png)
 | **Pin**                                                                                                                                                                                      | **Pin Function**                                                                                                                                    | **Connection**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Pin 1 (DIR)   | Defines direction of motor current | PIC GPIO RB4 |
-| Pin 2 (VSO) | Supply for SO Output |Voltage Regulator|
-| Pin 3 (SO) | SPI Serial Output | RC4/SDI1|
-| Pin 4 (VS) | Voltage Supply | Voltage Regulator|
-| Pin 5 (OUT1) | Output 1 | Motor |
-| Pin 6 (GND) |Ground| Ground|
-| Pin 7 (OUT2) | Output 2 | Motor 2|
-| Pin 8 (SI) | Serial Input | RB7/SDO1 |
-| Pin 9 (CSN) | SPI Chip Select | Not Sure |
-| Pin 10 (SCK) | Clock Input | RC3/SCK1|
-| Pin 11 (DIS) | Disables outputs | Not sure|
-| Pin 12 (PWM) | Pulse Width Modulation | Not Connected |
+| Pin 1 (DIR)   | \* Defines direction of motor current | \* PIC GPIO RB4 |
+| Pin 2 (VSO) | \* Supply for SO Output | \* Voltage Regulator|
+| Pin 3 (SO) | \* SPI Serial Output | \* RC4/SDI1|
+| Pin 4 (VS) | \* Voltage Supply | \* Voltage Regulator|
+| Pin 5 (OUT1) | \* Output 1 | \* Motor |
+| Pin 6 (GND) | \* Ground| \* Ground|
+| Pin 7 (OUT2) | \* Output 2 | \* Motor 2|
+| Pin 8 (SI) | \* Serial Input | \* RB7/SDO1 |
+| Pin 9 (CSN) | \* SPI Chip Select | \* Not Sure |
+| Pin 10 (SCK) | \* Clock Input | \* RC3/SCK1|
+| Pin 11 (DIS) | \* Disables outputs | \* Not sure|
+| Pin 12 (PWM) | \* Pulse Width Modulation | \* Not Connected |
 
