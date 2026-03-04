@@ -24,8 +24,8 @@ The selected motor driver is compatible with the selected DIP-PIC18F47Q10 microc
 ![](IFX9201SGAUMA1pinout.png)
 
 **Pinout for Driver 1**
-| Pin | Pin Function | Connection |
-| -------------------------- | --------------------------------------------- | ------------------------------------- |
+| **Pin**                                                   | **Pin Function**                                                                                         | **Connection**                                                                                                       |
+| -------------------------- | -------------------------------------------------------- | ------------------------------------------------------- |
 | Pin 1 (DIR) | Defines direction of motor current | PIC GPIO RC2 |
 | Pin 2 (VSO) | Supply for SO Output | Voltage Regulator |
 | Pin 3 (SO) | SPI Serial Output | RC4 / SDI1 |
