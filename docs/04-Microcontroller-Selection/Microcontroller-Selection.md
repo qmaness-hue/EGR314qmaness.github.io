@@ -15,7 +15,7 @@ The role of this subsystem of the EV Scope is to accurately recieve instruction 
 The microcontroller I selected for the motor system will be the DIP microcontroller provided in class. The motor driver and gearmotor I selected are compatible with the PIC18F47Q10. The motor driver I selected--the IFX9201SGAUMA1--utilizes the SPI interface. This interface is covered in depth during class, making it a well understood software. All parameters appear to match up, as I did the component selection with the DIP given in class in mind.
 
 **MPLAB Pin Configuration**
-![](PDIP40.png)
+![](TQFP48.png)
 
 The selected motor driver is compatible with the selected DIP-PIC18F47Q10 microcontroller. In the figure above, you can see all allocations needed for SPI communications between the driver and the DIP. There are pins allocated for UART for ease of interaction, as well as GPIO pins for LEDs for debugging.
 
