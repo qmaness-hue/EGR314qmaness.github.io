@@ -8,16 +8,16 @@ The following section contains information regarding the selected microcontrolle
 
 **Role and Responsibilities**
 
-The role of this subsystem of the EV Scope is to accurately recieve instruction from the human interface and camera (in some cases), and then interpret that information and make movements to accomplish the given need. The motor needs to accurately move in the manner that the user wishes--meaning that the motor both has to accurately interpret data from the camera and data from the human interface, and subsequently make precise movement to accomplish the task.
+The role of this subsystem of the EV Scope is to accurately recieve instruction from the human interface and camera (in some cases), and then interpret that information and make movements to accomplish the given need. The motor needs to accurately move in the manner that the user wishes--meaning that the motor has to accurately interpret data from the human interface, and subsequently make precise movement to accomplish the given task.
 
 ## Selected Microcontroller
 
-The microcontroller I selected for the motor system will be the DIP microcontroller provided in class. The motor driver and gearmotor I selected are compatible with the PIC18F47Q10. The motor driver I selected--the IFX9201SGAUMA1--utilizes the SPI interface. This interface is covered in depth during class, making it a well understood software. All parameters appear to match up, as I did the component selection with the DIP given in class in mind.
+The microcontroller I selected for the motor system is the PIC18F57Q43, a microcontroller provided in class. The motor driver and gearmotor I selected are compatible with the PIC18F57Q43. The motor driver I selected--the IFX9201SGAUMA1--utilizes the SPI interface. This interface is covered in depth during class, making it a well understood software. All parameters appear to match up, as I did the component selection with the microcontroller given in class in mind.
 
 **MPLAB Pin Configuration**
 ![](TQFP48.png)
 
-The selected motor driver is compatible with the selected DIP-PIC18F47Q10 microcontroller. In the figure above, you can see all allocations needed for SPI communications between the driver and the DIP. There are pins allocated for UART for ease of interaction, as well as GPIO pins for LEDs for debugging.
+The selected motor driver is compatible with the selected PIC18F57Q43 microcontroller. In the figure above, you can see all allocations needed for SPI communications between the drivers and the microcontoller.
 
 ## Driver-Microcontoller Communications
 **Pinout for IFX9201SGAUMA1**
