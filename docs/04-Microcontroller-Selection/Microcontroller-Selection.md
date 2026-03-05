@@ -34,7 +34,7 @@ The selected motor driver is compatible with the selected PIC18F57Q43 microcontr
 | Pin 5 (OUT1) | Output 1 | Motor |
 | Pin 6 (GND) | Ground | Ground |
 | Pin 7 (OUT2) | Output 2 | Not Connected |
-| Pin 8 (SI) | Serial Input | RB7 / SDO1 |
+| Pin 8 (SI) | Serial Input | RB1 / SDO1 |
 | Pin 9 (CSN) | SPI Chip Select | Not Connected |
 | Pin 10 (SCK) | Clock Input | RC3 / SCK1 |
 | Pin 11 (DIS) | Disables outputs | Not Connected |
