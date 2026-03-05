@@ -4,4 +4,4 @@ title: Power Budget
 
 ## Power Budget Spreadsheet ##
 
-[](PowerBudget_QM.png)
+[](PowerBudget1.png)
