@@ -16,7 +16,7 @@ for<br>
 
 ## Introduction
 
-* **This datasheet gives the design and process of creating as well as information regarding the dual-motor subsystem of team 304's EV-Scope project. It gives a more in-detail description of the motor subsystem than is in the collective team datasheet.
+* **This datasheet gives the design and process of creating as well as information regarding the dual-motor subsystem of team 304's EV-Scope project. It gives a more in-detail description of the motor subsystem than is in the collective team datasheet.**
 ### Project Summary
 
 * This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
