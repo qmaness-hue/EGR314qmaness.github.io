@@ -12,16 +12,26 @@ Written context needs to added!
 
 ## Bill of Materials (Example as Table)
 
-*Table ##: An example of one approach to adding your BOM table to this section.*
+## Bill of Materials
+
+*Table 01: Bill of Materials for dual-motor subsystem.*
 
 | **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | **Schematic Reference Designators** |
 |:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
-8-bit SIPO/SISO Shift Register, SOIC-16 package | 1 | $0.49 | $ 0.49 | NXP | 74HC595D,112 | [DigiKey](https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC595D-112/763550) | [datasheet link](https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf) | U1 |
-0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package |10 | 0.2750 | $2.75 | KEMET | C0805F104K5RACTU | PRLTA 109 |n/a | C2, C4, C6, C7, C8, C9, C10, C11, C12, C16
-
-Note: Setting it up as a table is nice because it is completely viewable without scaling issues. <ins>Downside</ins> is that you have to do the math.
-
-* You could also import your BOM via a screenshot of the spreadsheet created BOM
+| PJ-102AH Barrel Jack | 1 | $0.76 | $ 0.76 | Same Sky | CP-102AH-ND | Peralta 109 | [Datasheet](https://www.sameskydevices.com/product/resource/pj-102ah.pdf) | J1 |
+| 10K Ohm Resistor | 9 | $0.10 | $ 0.70 | Stackpole Electronics Inc | CF14JT10K0 | Peralta 109 | [Datasheet](https://www.seielect.com/catalog/SEI-CF_CFM.pdf) | R3, R4, R5, R6, R7, R8, R9, R10, R11|
+| 330 uF Ceramic Capacitor | 1 | $0.72 | $ 0.72 | Vishay Beyschlag/Draloric/BC Components | 1C10Z5U334M050B | Peralta 109 | [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2323/1C-9C_Series_Rev_Sep_2015.pdf) | C11 |
+| .1uF Ceramic Capacitor | 5 | $0.24 | $ 1.68 | Vishay Beyschlag/Draloric/BC Components | K104K10X7RF5TL2 | Peralta 109 | [Datasheet](https://www.vishay.com/docs/45171/kseries.pdf) | C2, C3, C4, C5, C7 |
+| Button Switch | 1 | $0.50 | $ 0.50 | SparkFun Electronics | 00097 | Peralta 109 | Not Provided | SW1 |
+| Red LED | 1 | $0.15 | $ 0.15 | Würth Elektronik | 151051RS11000 | Peralta 109 | [Datasheet](https://www.we-online.com/components/products/datasheet/151051RS11000.pdf) | D1 |
+| 1x40 Male Header | 1 | $1.38 | $ 1.38 | Würth Elektronik | 61304011121 | Peralta 109 | [Datasheet](https://www.we-online.com/components/products/datasheet/61304011121.pdf) | H1 |
+| 1x2 Jumper | 2 | $0.28 | $0.56  | Würth Elektronik | 60900213421 | Peralta 109 | [Datasheet](https://www.we-online.com/components/products/datasheet/60900213421.pdf) | J1, J2, J3 |
+| Curiosity Nano PIC18F57Q43 Microchip | 1 | $9.99 | $ 9.99 | Microchip technology | DM164150 | Peralta 109 | [Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/PIC18F27-47-57Q43-Microcontroller-Data-Sheet-XLP-DS40002147.pdf) | U2 |
+-Op-Amp-DS20001733L.pdf) | U1 |
+| 1.0A Fuse  | 1 | $0.48 | $ 0.48 | Littelfuse Inc. | 021701.6MXP | Peralta 109 | [Datasheet](https://www.littelfuse.com/assetdocs/littelfuse-fuse-217-datasheet?assetguid=af55be94-c42e-41b1-ad43-e070e09443fe) | F2 |
+| LM2575 Voltage Regulator  | 1 | $0.50 | $ 0.50 | onsemi | LM2575D2T-3.3R4G | Peralta 109 | [Datasheet](https://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf) | U4 |
+| PCB-Mount | 1 | $0.22 | $ 0.22 | Molex | 0022232031 | [Digikey](https://www.digikey.com.br/en/products/detail/molex/0022232031/26669) | [Datasheet](https://www.molex.com/pdm_docs/sd/022232031_sd.pdf) | P1 |
+| Test Points | 1 | $9.95 | $ 9.95 | Adafruit Industries LLC | 3825 | Peralta 109 | None | TP1... |
 
 ## Bill of Materials (Example as Image)
 ![](BOM-Screenshot.png){style width: "2000"}
