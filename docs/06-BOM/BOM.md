@@ -20,6 +20,7 @@ Written context needs to added!
 |:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
 | PJ-102AH Barrel Jack | 1 | $0.76 | $ 0.76 | Same Sky | CP-102AH-ND | Peralta 109 | [Datasheet](https://www.sameskydevices.com/product/resource/pj-102ah.pdf) | J1 |
 | 10K Ohm Resistor | 9 | $0.10 | $ 0.70 | Stackpole Electronics Inc | CF14JT10K0 | Peralta 109 | [Datasheet](https://www.seielect.com/catalog/SEI-CF_CFM.pdf) | R3, R4, R5, R6, R7, R8, R9, R10, R11|
+| 330 Ohm Resistor | 2 | $0.10 | $0.20 | Stackpole Electronics Inc. | CFM12JT330R | Peralta 109 | [Datasheet](https://www.seielect.com/catalog/SEI-CF_CFM.pdf) |
 | 330 uF Ceramic Capacitor | 1 | $0.72 | $ 0.72 | Vishay Beyschlag/Draloric/BC Components | 1C10Z5U334M050B | Peralta 109 | [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2323/1C-9C_Series_Rev_Sep_2015.pdf) | C11 |
 | 330 uH Inductor | 1 | $2.16 | $2.16 | Wurth Electronik | 74456233 | Peralta 109 | [Datasheet](https://www.we-online.com/components/products/datasheet/74456233.pdf) | L1 |
 | .1uF Ceramic Capacitor | 5 | $0.24 | $ 1.68 | Vishay Beyschlag/Draloric/BC Components | K104K10X7RF5TL2 | Peralta 109 | [Datasheet](https://www.vishay.com/docs/45171/kseries.pdf) | C2, C3, C4, C5, C7 |
