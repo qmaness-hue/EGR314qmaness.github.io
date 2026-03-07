@@ -25,13 +25,14 @@ Written context needs to added!
 | 330 uH Inductor | 1 | $2.16 | $2.16 | Wurth Electronik | 74456233 | Peralta 109 | [Datasheet](https://www.we-online.com/components/products/datasheet/74456233.pdf) | L1 |
 | .1uF Ceramic Capacitor | 5 | $0.24 | $ 1.68 | Vishay Beyschlag/Draloric/BC Components | K104K10X7RF5TL2 | Peralta 109 | [Datasheet](https://www.vishay.com/docs/45171/kseries.pdf) | C2, C3, C4, C5, C7 |
 | Button Switch | 1 | $0.50 | $ 0.50 | SparkFun Electronics | 00097 | Peralta 109 | Not Provided | SW1 |
-| Red LED | 1 | $0.15 | $ 0.15 | Würth Elektronik | 151051RS11000 | Peralta 109 | [Datasheet](https://www.we-online.com/components/products/datasheet/151051RS11000.pdf) | D1 |
+| Red LED | 1 | $0.15 | $ 0.15 | Würth Elektronik | 151051RS11000 | Peralta 109 | [Datasheet](https://www.we-online.com/components/products/datasheet/151051RS11000.pdf) | D3 |
+| Blue LED | 1 | $0.24 | $ 0.24 | Würth Elektronik | 151051BS04000 | Peralta 109 | [Datasheet](https://www.we-online.com/components/products/datasheet/151051BS04000.pdf) | D2 |
 | 1x40 Male Header | 1 | $1.38 | $ 1.38 | Würth Elektronik | 61304011121 | Peralta 109 | [Datasheet](https://www.we-online.com/components/products/datasheet/61304011121.pdf) | H1 |
 | 1x2 Jumper | 2 | $0.28 | $0.56  | Würth Elektronik | 60900213421 | Peralta 109 | [Datasheet](https://www.we-online.com/components/products/datasheet/60900213421.pdf) | J1, J2, J3 |
 | Curiosity Nano PIC18F57Q43 Microchip | 1 | $9.99 | $ 9.99 | Microchip technology | DM164150 | Peralta 109 | [Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/PIC18F27-47-57Q43-Microcontroller-Data-Sheet-XLP-DS40002147.pdf) | U2 |
 | 2.0A Fuse  | 1 | $0.48 | $ 0.48 | Littelfuse Inc. | 021701.6MXP | Peralta 109 | [Datasheet](https://www.littelfuse.com/assetdocs/littelfuse-fuse-217-datasheet?assetguid=af55be94-c42e-41b1-ad43-e070e09443fe) | F2 |
 | LM2575 Voltage Regulator  | 1 | $2.16 | $2.16 | onsemi | LM2575D2T-3.3R4G | [Digikey](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688) | [Datasheet](https://www.onsemi.com/pdf/datasheet/lm2575-d.pdf) | U2 |
-| Diode | 1 | $0.11 | $0.11 | onsemi | 1N4148WT | Peralta 109 | [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6621/1N914BWTCND.pdf?_gl=1*1i74fpn*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAk6rNBhCxARIsAN5mQLvZCO49X1VO_N27ly2dua_g3a2ohYwLFMcFtJXA3qMOymAuprz3NAEaAqYpEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLli6H5kWYkJFF7ljm4Jgv1YJE)
+| Diode | 1 | $0.11 | $0.11 | onsemi | 1N4148WT | Peralta 109 | [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6621/1N914BWTCND.pdf?_gl=1*1i74fpn*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAk6rNBhCxARIsAN5mQLvZCO49X1VO_N27ly2dua_g3a2ohYwLFMcFtJXA3qMOymAuprz3NAEaAqYpEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLli6H5kWYkJFF7ljm4Jgv1YJE) | D1 |
 | PCB-Mount | 1 | $0.22 | $ 0.22 | Molex | 0022232031 | [Digikey](https://www.digikey.com.br/en/products/detail/molex/0022232031/26669) | [Datasheet](https://www.molex.com/pdm_docs/sd/022232031_sd.pdf) | P1 |
 | Test Points | 1 | $9.95 | $ 9.95 | Adafruit Industries LLC | 3825 | Peralta 109 | None | TP1... |
 
