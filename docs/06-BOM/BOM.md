@@ -36,7 +36,7 @@ Written context needs to added!
 | PCB-Mount | 1 | $0.22 | $ 0.22 | Molex | 0022232031 | [Digikey](https://www.digikey.com.br/en/products/detail/molex/0022232031/26669) | [Datasheet](https://www.molex.com/pdm_docs/sd/022232031_sd.pdf) | P1 |
 | Test Points | 1 | $9.95 | $ 9.95 | Adafruit Industries LLC | 3825 | Peralta 109 | None | TP1... |
 | Stepper Motor | 2 | $14.00 | $28.00 | Adafruit Industries LLC | 324 | [Digikey](https://www.digikey.com/en/products/detail/adafruit-industries-llc/324/5022791) | [Datasheet](https://cdn-shop.adafruit.com/product-files/324/C140-A+datasheet.jpg) | U5, U6 |
-| Motor Driver | 2 | $3.55 | $7.10 | 
+| Motor Driver | 2 | $3.55 | $7.10 | Infineon Technologies | IFX9201SGAUMA1 | [Digikey](https://www.digikey.com/en/products/detail/infineon-technologies/IFX9201SGAUMA1/5415542) | [Datasheet](https://www.infineon.com/dgdl/Infineon-IFX9201SG-DS-v01_01-EN.pdf?fileId=5546d4624cb7f111014d2e8916795dea&ack=t) | U3, U4 |
 
 ## Bill of Materials (Example as Image)
 ![](BOM-Screenshot.png){style width: "2000"}
