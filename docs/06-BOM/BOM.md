@@ -30,7 +30,7 @@ Written context needs to added!
 | Curiosity Nano PIC18F57Q43 Microchip | 1 | $9.99 | $ 9.99 | Microchip technology | DM164150 | Peralta 109 | [Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/PIC18F27-47-57Q43-Microcontroller-Data-Sheet-XLP-DS40002147.pdf) | U2 |
 -Op-Amp-DS20001733L.pdf) | U1 |
 | 1.0A Fuse  | 1 | $0.48 | $ 0.48 | Littelfuse Inc. | 021701.6MXP | Peralta 109 | [Datasheet](https://www.littelfuse.com/assetdocs/littelfuse-fuse-217-datasheet?assetguid=af55be94-c42e-41b1-ad43-e070e09443fe) | F2 |
-| LM2575 Voltage Regulator  | 1 | $0.50 | $ 0.50 | onsemi | LM2575D2T-3.3R4G | Peralta 109 | [Datasheet](https://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf) | U4 |
+| LM2575 Voltage Regulator  | 1 | $0.50 | $ 0.50 | onsemi | LM2575D2T-3.3R4G | [Digikey](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688) | [Datasheet](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688) | U2 |
 | PCB-Mount | 1 | $0.22 | $ 0.22 | Molex | 0022232031 | [Digikey](https://www.digikey.com.br/en/products/detail/molex/0022232031/26669) | [Datasheet](https://www.molex.com/pdm_docs/sd/022232031_sd.pdf) | P1 |
 | Test Points | 1 | $9.95 | $ 9.95 | Adafruit Industries LLC | 3825 | Peralta 109 | None | TP1... |
 
