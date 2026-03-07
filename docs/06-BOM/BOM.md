@@ -7,8 +7,6 @@ tags:
 
 ## Overview
 The Bill of Materials is the total culmination of every part within the subsystem.
->Pick **ONLY** one of the two examples show below. **Remove** the other example. **REMOVE notations within the remaining section about being an example.**  
-
 
 ## Bill of Materials
 
