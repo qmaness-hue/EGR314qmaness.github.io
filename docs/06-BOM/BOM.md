@@ -35,6 +35,7 @@ Written context needs to added!
 | Diode | 1 | $0.11 | $0.11 | onsemi | 1N4148WT | Peralta 109 | [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6621/1N914BWTCND.pdf?_gl=1*1i74fpn*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAk6rNBhCxARIsAN5mQLvZCO49X1VO_N27ly2dua_g3a2ohYwLFMcFtJXA3qMOymAuprz3NAEaAqYpEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLli6H5kWYkJFF7ljm4Jgv1YJE) | D1 |
 | PCB-Mount | 1 | $0.22 | $ 0.22 | Molex | 0022232031 | [Digikey](https://www.digikey.com.br/en/products/detail/molex/0022232031/26669) | [Datasheet](https://www.molex.com/pdm_docs/sd/022232031_sd.pdf) | P1 |
 | Test Points | 1 | $9.95 | $ 9.95 | Adafruit Industries LLC | 3825 | Peralta 109 | None | TP1... |
+| Stepper Motor | 2 | $14.00 | $28.00 | Adafruit Industries LLC | 324 | [Digikey](https://www.digikey.com/en/products/detail/adafruit-industries-llc/324/5022791) | [Datasheet](https://cdn-shop.adafruit.com/product-files/324/C140-A+datasheet.jpg) | U5, U6 |
 
 ## Bill of Materials (Example as Image)
 ![](BOM-Screenshot.png){style width: "2000"}
