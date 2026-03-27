@@ -4,7 +4,7 @@ title: Motor Subsystem API
 
 # Motor Subsystem API
 
-This document defines the communication interface for the Motor Subsystem.  
+This document defines the communication interface for the Dual-Motor Subsystem.  
 All messages follow a fixed 3-byte structure.
 
 ---
