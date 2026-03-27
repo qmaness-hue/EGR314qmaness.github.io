@@ -61,7 +61,7 @@ All messages follow a fixed 3-byte structure.
 
 ---
 
-# 📤 Messages Sent (Responses)
+## Messages Sent (Responses)
 
 ## 1. ACK (Acknowledgment)
 
