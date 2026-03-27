@@ -13,7 +13,7 @@ All messages follow a fixed 3-byte structure.
 
 ## 1. MOVE Command — Translate Coordinate Input to Motor Movement
 
-| Field            | Byte 1              | Byte 2              | Byte 3              |
+|           | Byte 1              | Byte 2              | Byte 3              |
 |------------------|--------------------|--------------------|--------------------|
 | Variable Name             | command_type       | x_coordinate       | y_coordinate       |
 | Variable Type        | uint8              | int16 / uint8      | int16 / uint8      |
