@@ -26,7 +26,7 @@
 
     
       
-        <title>API - EGR 314 Quinn Maness Data Sheet</title>
+        <title>Motor Subsystem API - EGR 314 Quinn Maness Data Sheet</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#messages-recieved" class="md-skip">
+        <a href="#motor-subsystem-api" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API
+              Motor Subsystem API
             
           </span>
         </div>
@@ -848,12 +848,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    API
+    Motor Subsystem API
   </span>
   
 
@@ -864,7 +866,7 @@
         
   
   <span class="md-ellipsis">
-    API
+    Motor Subsystem API
   </span>
   
 
@@ -876,6 +878,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -884,9 +888,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#messages-recieved" class="md-nav__link">
+  <a href="#messages-received-commands" class="md-nav__link">
     <span class="md-ellipsis">
-      Messages Recieved
+      Messages Received (Commands)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-move-command-translate-coordinate-input-to-motor-movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. MOVE Command — Translate Coordinate Input to Motor Movement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-motor-enable-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. MOTOR ENABLE Command
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-set-speed-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. SET SPEED Command
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-stop-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. STOP Command
     </span>
   </a>
   
@@ -981,6 +1021,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -989,9 +1031,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#messages-recieved" class="md-nav__link">
+  <a href="#messages-received-commands" class="md-nav__link">
     <span class="md-ellipsis">
-      Messages Recieved
+      Messages Received (Commands)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-move-command-translate-coordinate-input-to-motor-movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. MOVE Command — Translate Coordinate Input to Motor Movement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-motor-enable-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. MOTOR ENABLE Command
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-set-speed-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. SET SPEED Command
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-stop-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. STOP Command
     </span>
   </a>
   
@@ -1020,10 +1098,355 @@
   
 
 
-  <h1>API</h1>
-
-<h2 id="messages-recieved">Messages Recieved</h2>
-<p><strong>Translate Coordinate Input to Motor Input</strong></p>
+<h1 id="motor-subsystem-api">Motor Subsystem API</h1>
+<p>This document defines the communication interface for the Motor Subsystem.<br>
+All messages follow a fixed 3-byte structure.</p>
+<hr>
+<h2 id="messages-received-commands">Messages Received (Commands)</h2>
+<h2 id="1-move-command-translate-coordinate-input-to-motor-movement">1. MOVE Command — Translate Coordinate Input to Motor Movement</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Command Type</td>
+<td>X Coordinate</td>
+<td>Y Coordinate</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Identifies command</td>
+<td>Target X position</td>
+<td>Target Y position</td>
+</tr>
+<tr>
+<td>Data Type</td>
+<td>uint8</td>
+<td>int16 / uint8</td>
+<td>int16 / uint8</td>
+</tr>
+<tr>
+<td>Example Value</td>
+<td>0x01</td>
+<td>100</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Notes</td>
+<td>MOVE command</td>
+<td>Range: 0–255*</td>
+<td>Range: 0–255*</td>
+</tr>
+</tbody>
+</table>
+<p>*Range depends on system scaling.</p>
+<hr>
+<h2 id="2-motor-enable-command">2. MOTOR ENABLE Command</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Command Type</td>
+<td>Enable Flag</td>
+<td>Reserved</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Enables motors</td>
+<td>1 = ON, 0 = OFF</td>
+<td>Not used</td>
+</tr>
+<tr>
+<td>Data Type</td>
+<td>uint8</td>
+<td>uint8</td>
+<td>uint8</td>
+</tr>
+<tr>
+<td>Example Value</td>
+<td>0x02</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Notes</td>
+<td>Safety control</td>
+<td>Required</td>
+<td>Set to 0</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-set-speed-command">3. SET SPEED Command</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Command Type</td>
+<td>Speed Value</td>
+<td>Reserved</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Sets motor speed</td>
+<td>Speed level</td>
+<td>Not used</td>
+</tr>
+<tr>
+<td>Data Type</td>
+<td>uint8</td>
+<td>uint8</td>
+<td>uint8</td>
+</tr>
+<tr>
+<td>Example Value</td>
+<td>0x03</td>
+<td>200</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Notes</td>
+<td>PWM / step rate</td>
+<td>Range: 0–255</td>
+<td>Set to 0</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="4-stop-command">4. STOP Command</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Command Type</td>
+<td>Reserved</td>
+<td>Reserved</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Stops all motion</td>
+<td>Not used</td>
+<td>Not used</td>
+</tr>
+<tr>
+<td>Data Type</td>
+<td>uint8</td>
+<td>uint8</td>
+<td>uint8</td>
+</tr>
+<tr>
+<td>Example Value</td>
+<td>0x04</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Notes</td>
+<td>Immediate halt</td>
+<td>Set to 0</td>
+<td>Set to 0</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="messages-sent-responses">📤 Messages Sent (Responses)</h1>
+<h2 id="1-ack-acknowledgment">1. ACK (Acknowledgment)</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Status Code</td>
+<td>Command Echo</td>
+<td>Reserved</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Confirms command</td>
+<td>Echo of Byte 1</td>
+<td>Not used</td>
+</tr>
+<tr>
+<td>Data Type</td>
+<td>uint8</td>
+<td>uint8</td>
+<td>uint8</td>
+</tr>
+<tr>
+<td>Example Value</td>
+<td>0x10</td>
+<td>0x01 (MOVE)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Notes</td>
+<td>Success response</td>
+<td>Matches command</td>
+<td>Set to 0</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="2-status-message">2. STATUS Message</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Status Code</td>
+<td>Current X Position</td>
+<td>Current Y Position</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Reports position</td>
+<td>X position</td>
+<td>Y position</td>
+</tr>
+<tr>
+<td>Data Type</td>
+<td>uint8</td>
+<td>uint8</td>
+<td>uint8</td>
+</tr>
+<tr>
+<td>Example Value</td>
+<td>0x11</td>
+<td>100</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Notes</td>
+<td>Periodic update</td>
+<td>Scaled value</td>
+<td>Scaled value</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-error-message">3. ERROR Message</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Status Code</td>
+<td>Error Code</td>
+<td>Reserved</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Indicates failure</td>
+<td>Type of error</td>
+<td>Not used</td>
+</tr>
+<tr>
+<td>Data Type</td>
+<td>uint8</td>
+<td>uint8</td>
+<td>uint8</td>
+</tr>
+<tr>
+<td>Example Value</td>
+<td>0xFF</td>
+<td>0x01</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Notes</td>
+<td>Error handling</td>
+<td>See table below</td>
+<td>Set to 0</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="error-codes">Error Codes</h2>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x01</td>
+<td>Invalid Command</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>Invalid Parameter</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td>Motor Disabled</td>
+</tr>
+<tr>
+<td>0x04</td>
+<td>Out of Range</td>
+</tr>
+<tr>
+<td>0x05</td>
+<td>Hardware Failure</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="example-message-flow">Example Message Flow</h1>
+<h3 id="valid-move-command">Valid MOVE Command</h3>
 
 
 
