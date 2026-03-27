@@ -1205,38 +1205,37 @@ All messages follow a fixed 3-byte structure.</p>
 </thead>
 <tbody>
 <tr>
-<td>Name</td>
-<td>Command Type</td>
-<td>X Coordinate</td>
-<td>Y Coordinate</td>
+<td>Variable Name</td>
+<td>command_type</td>
+<td>x_coordinate</td>
+<td>y_coordinate</td>
 </tr>
 <tr>
-<td>Description</td>
-<td>Identifies command</td>
-<td>Target X position</td>
-<td>Target Y position</td>
-</tr>
-<tr>
-<td>Data Type</td>
+<td>Variable Type</td>
 <td>uint8</td>
 <td>int16 / uint8</td>
 <td>int16 / uint8</td>
 </tr>
 <tr>
-<td>Example Value</td>
+<td>Min Value</td>
+<td>0x00</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>0x01</td>
+<td>255</td>
+<td>255</td>
+</tr>
+<tr>
+<td>Example</td>
 <td>0x01</td>
 <td>100</td>
 <td>50</td>
 </tr>
-<tr>
-<td>Notes</td>
-<td>MOVE command</td>
-<td>Range: 0–255*</td>
-<td>Range: 0–255*</td>
-</tr>
 </tbody>
 </table>
-<p>*Range depends on system scaling.</p>
 <hr>
 <h2 id="2-motor-enable-command">2. MOTOR ENABLE Command</h2>
 <table>
