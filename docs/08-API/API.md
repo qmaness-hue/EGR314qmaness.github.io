@@ -15,13 +15,11 @@ All messages follow a fixed 3-byte structure.
 
 | Field            | Byte 1              | Byte 2              | Byte 3              |
 |------------------|--------------------|--------------------|--------------------|
-| Name             | Command Type       | X Coordinate       | Y Coordinate       |
-| Description      | Identifies command | Target X position  | Target Y position  |
-| Data Type        | uint8              | int16 / uint8      | int16 / uint8      |
-| Example Value    | 0x01               | 100                | 50                 |
-| Notes            | MOVE command       | Range: 0–255*      | Range: 0–255*      |
-
-\*Range depends on system scaling.
+| Variable Name             | command_type       | x_coordinate       | y_coordinate       |
+| Variable Type        | uint8              | int16 / uint8      | int16 / uint8      |
+| Min Value    | 0x00     | 0      | 0      |
+| Max Value    | 0x01     | 255    |255     |
+| Example    | 0x01               | 100                | 50                 |
 
 ---
 
