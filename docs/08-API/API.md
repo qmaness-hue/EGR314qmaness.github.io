@@ -78,7 +78,7 @@ All messages follow a fixed 3-byte structure.
 | Field            | Byte 1              | Byte 2              | Byte 3              |
 |------------------|--------------------|--------------------|--------------------|
 | Variable Name             | position_code        | current_x_position | current_y_position |
-| Data Type        | uint8              | uint8              | uint8              |
+| Variable Type        | uint8              | uint8              | uint8              |
 | Min Value        | 0x11                | 0                  | 0                  |
 | Max Value        | 0x11                | 100              | 100                |
 | Example    | 0x11               | 50                | 50                 |
@@ -89,11 +89,11 @@ All messages follow a fixed 3-byte structure.
 
 | Field            | Byte 1              | Byte 2              | Byte 3              |
 |------------------|--------------------|--------------------|--------------------|
-| Name             | Status Code        | Error Code         | Reserved           |
-| Description      | Indicates failure  | Type of error      | Not used           |
-| Data Type        | uint8              | uint8              | uint8              |
-| Example Value    | 0xFF               | 0x01               | 0                  |
-| Notes            | Error handling     | See table below    | Set to 0           |
+| Name             | error_status        | error_code         | Reserved           |
+| Variable Type        | uint8              | uint8              | uint8              |
+| Min Value          | 0xFE              | 0x01              | 0                  |
+| Max Value        | 0xFF                | 0x05              | 0                   |
+| Example    | 0xFF               | 0x03               | 0                  |
 
 ---
 
