@@ -1249,34 +1249,34 @@ All messages follow a fixed 3-byte structure.</p>
 </thead>
 <tbody>
 <tr>
-<td>Name</td>
-<td>Command Type</td>
-<td>Enable Flag</td>
-<td>Reserved</td>
+<td>Variable Name</td>
+<td>enable_type</td>
+<td>enable_flag</td>
+<td>reserved</td>
 </tr>
 <tr>
-<td>Description</td>
-<td>Enables motors</td>
-<td>1 = ON, 0 = OFF</td>
-<td>Not used</td>
-</tr>
-<tr>
-<td>Data Type</td>
+<td>Variable Type</td>
 <td>uint8</td>
 <td>uint8</td>
 <td>uint8</td>
 </tr>
 <tr>
-<td>Example Value</td>
+<td>Min value</td>
 <td>0x02</td>
-<td>1</td>
+<td>0 (off)</td>
 <td>0</td>
 </tr>
 <tr>
-<td>Notes</td>
-<td>Safety control</td>
-<td>Required</td>
-<td>Set to 0</td>
+<td>Max Value</td>
+<td>0x03</td>
+<td>1 (on)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>0x02</td>
+<td>1</td>
+<td>0</td>
 </tr>
 </tbody>
 </table>
@@ -1293,34 +1293,34 @@ All messages follow a fixed 3-byte structure.</p>
 </thead>
 <tbody>
 <tr>
-<td>Name</td>
-<td>Command Type</td>
-<td>Speed Value</td>
-<td>Reserved</td>
+<td>Variable Name</td>
+<td>speed_type</td>
+<td>speed_value</td>
+<td>reserved</td>
 </tr>
 <tr>
-<td>Description</td>
-<td>Sets motor speed</td>
-<td>Speed level</td>
-<td>Not used</td>
-</tr>
-<tr>
-<td>Data Type</td>
+<td>Variable Type</td>
 <td>uint8</td>
 <td>uint8</td>
 <td>uint8</td>
 </tr>
 <tr>
-<td>Example Value</td>
-<td>0x03</td>
-<td>200</td>
+<td>Min Value</td>
+<td>0x04</td>
+<td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td>Notes</td>
-<td>PWM / step rate</td>
-<td>Range: 0–255</td>
-<td>Set to 0</td>
+<td>Max Value</td>
+<td>0x05</td>
+<td>255</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>0x04</td>
+<td>125</td>
+<td>0</td>
 </tr>
 </tbody>
 </table>
@@ -1337,34 +1337,34 @@ All messages follow a fixed 3-byte structure.</p>
 </thead>
 <tbody>
 <tr>
-<td>Name</td>
-<td>Command Type</td>
+<td>Variable Name</td>
+<td>stop_type</td>
 <td>Reserved</td>
 <td>Reserved</td>
 </tr>
 <tr>
-<td>Description</td>
-<td>Stops all motion</td>
-<td>Not used</td>
-<td>Not used</td>
-</tr>
-<tr>
-<td>Data Type</td>
+<td>Variable Type</td>
 <td>uint8</td>
 <td>uint8</td>
 <td>uint8</td>
 </tr>
 <tr>
-<td>Example Value</td>
-<td>0x04</td>
+<td>Min Value</td>
+<td>0x06</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td>Notes</td>
-<td>Immediate halt</td>
-<td>Set to 0</td>
-<td>Set to 0</td>
+<td>Max Value</td>
+<td>0x06</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>0x06</td>
+<td>0</td>
+<td>0</td>
 </tr>
 </tbody>
 </table>
@@ -1382,34 +1382,34 @@ All messages follow a fixed 3-byte structure.</p>
 </thead>
 <tbody>
 <tr>
-<td>Name</td>
-<td>Status Code</td>
-<td>Command Echo</td>
+<td>Variable Name</td>
+<td>status_code</td>
+<td>command_echo</td>
 <td>Reserved</td>
 </tr>
 <tr>
-<td>Description</td>
-<td>Confirms command</td>
-<td>Echo of Byte 1</td>
-<td>Not used</td>
-</tr>
-<tr>
-<td>Data Type</td>
+<td>Variable Type</td>
 <td>uint8</td>
 <td>uint8</td>
 <td>uint8</td>
 </tr>
 <tr>
-<td>Example Value</td>
-<td>0x10</td>
-<td>0x01 (MOVE)</td>
+<td>Min Value</td>
+<td>0x09</td>
+<td>0x00</td>
 <td>0</td>
 </tr>
 <tr>
-<td>Notes</td>
-<td>Success response</td>
-<td>Matches command</td>
-<td>Set to 0</td>
+<td>Max Value</td>
+<td>0x10</td>
+<td>0x01</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>0x10</td>
+<td>0x01 (MOVE)</td>
+<td>0</td>
 </tr>
 </tbody>
 </table>
@@ -1426,16 +1426,10 @@ All messages follow a fixed 3-byte structure.</p>
 </thead>
 <tbody>
 <tr>
-<td>Name</td>
-<td>Status Code</td>
-<td>Current X Position</td>
-<td>Current Y Position</td>
-</tr>
-<tr>
-<td>Description</td>
-<td>Reports position</td>
-<td>X position</td>
-<td>Y position</td>
+<td>Variable Name</td>
+<td>position_code</td>
+<td>current_x_position</td>
+<td>current_y_position</td>
 </tr>
 <tr>
 <td>Data Type</td>
@@ -1444,16 +1438,22 @@ All messages follow a fixed 3-byte structure.</p>
 <td>uint8</td>
 </tr>
 <tr>
-<td>Example Value</td>
+<td>Min Value</td>
 <td>0x11</td>
-<td>100</td>
-<td>50</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td>Notes</td>
-<td>Periodic update</td>
-<td>Scaled value</td>
-<td>Scaled value</td>
+<td>Max Value</td>
+<td>0x11</td>
+<td>100</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>0x11</td>
+<td>50</td>
+<td>50</td>
 </tr>
 </tbody>
 </table>
