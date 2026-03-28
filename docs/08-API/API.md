@@ -27,11 +27,11 @@ All messages follow a fixed 3-byte structure.
 
 | Field            | Byte 1              | Byte 2              | Byte 3              |
 |------------------|--------------------|--------------------|--------------------|
-| Name             | Command Type       | Enable Flag        | Reserved           |
-| Description      | Enables motors     | 1 = ON, 0 = OFF    | Not used           |
-| Data Type        | uint8              | uint8              | uint8              |
-| Example Value    | 0x02               | 1                  | 0                  |
-| Notes            | Safety control     | Required           | Set to 0           |
+| Variable Name             | enable_type       | enable_flag        | reserved           |
+| Variable Type        | uint8              | uint8              | uint8              |
+| Min value        | 0x02               | 0 (off)            | 0                   |
+| Max Value        | 0x03                | 1 (on)            | 0
+| Example    | 0x02               | 1                  | 0                  |
 
 ---
 
@@ -39,11 +39,11 @@ All messages follow a fixed 3-byte structure.
 
 | Field            | Byte 1              | Byte 2              | Byte 3              |
 |------------------|--------------------|--------------------|--------------------|
-| Name             | Command Type       | Speed Value        | Reserved           |
-| Description      | Sets motor speed   | Speed level        | Not used           |
-| Data Type        | uint8              | uint8              | uint8              |
-| Example Value    | 0x03               | 200                | 0                  |
-| Notes            | PWM / step rate    | Range: 0–255       | Set to 0           |
+| Variable Name             | speed_type       | speed_value        | reserved           |
+| Variable Type        | uint8              | uint8              | uint8              |
+| Min Value        | 0x04                | 0                  | 0                  |
+| Max Value        | 0x05                | 255                | 0                |
+| Example    | 0x04               | 125                | 0                  |
 
 ---
 
@@ -51,11 +51,11 @@ All messages follow a fixed 3-byte structure.
 
 | Field            | Byte 1              | Byte 2              | Byte 3              |
 |------------------|--------------------|--------------------|--------------------|
-| Name             | Command Type       | Reserved           | Reserved           |
-| Description      | Stops all motion   | Not used           | Not used           |
-| Data Type        | uint8              | uint8              | uint8              |
-| Example Value    | 0x04               | 0                  | 0                  |
-| Notes            | Immediate halt     | Set to 0           | Set to 0           |
+| Variable Name             | stop_type       | Reserved           | Reserved           |
+| Variable Type        | uint8              | uint8              | uint8              |
+| Min Value         | 0x06              | 0                   | 0                  |
+| Max Value         | 0x06              | 0                  | 0                   |
+| Example    | 0x06               | 0                  | 0                  |
 
 ---
 
@@ -65,11 +65,11 @@ All messages follow a fixed 3-byte structure.
 
 | Field            | Byte 1              | Byte 2              | Byte 3              |
 |------------------|--------------------|--------------------|--------------------|
-| Name             | Status Code        | Command Echo       | Reserved           |
-| Description      | Confirms command   | Echo of Byte 1     | Not used           |
-| Data Type        | uint8              | uint8              | uint8              |
-| Example Value    | 0x10               | 0x01 (MOVE)        | 0                  |
-| Notes            | Success response   | Matches command    | Set to 0           |
+| Variable Name             | status_code        | command_echo       | Reserved           |
+| Variable Type        | uint8              | uint8              | uint8              |
+| Min Value         | 0x09              | 0x00                | 0                  |
+| Max Value        | 0x10                | 0x01              | 0                  |
+| Example    | 0x10               | 0x01 (MOVE)        | 0                  |
 
 ---
 
@@ -77,11 +77,11 @@ All messages follow a fixed 3-byte structure.
 
 | Field            | Byte 1              | Byte 2              | Byte 3              |
 |------------------|--------------------|--------------------|--------------------|
-| Name             | Status Code        | Current X Position | Current Y Position |
-| Description      | Reports position   | X position         | Y position         |
+| Variable Name             | position_code        | current_x_position | current_y_position |
 | Data Type        | uint8              | uint8              | uint8              |
-| Example Value    | 0x11               | 100                | 50                 |
-| Notes            | Periodic update    | Scaled value       | Scaled value       |
+| Min Value        | 0x11                | 0                  | 0                  |
+| Max Value        | 0x11                | 100              | 100                |
+| Example    | 0x11               | 50                | 50                 |
 
 ---
 
