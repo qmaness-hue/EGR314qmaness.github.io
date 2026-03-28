@@ -1432,7 +1432,7 @@ All messages follow a fixed 3-byte structure.</p>
 <td>current_y_position</td>
 </tr>
 <tr>
-<td>Data Type</td>
+<td>Variable Type</td>
 <td>uint8</td>
 <td>uint8</td>
 <td>uint8</td>
@@ -1471,33 +1471,33 @@ All messages follow a fixed 3-byte structure.</p>
 <tbody>
 <tr>
 <td>Name</td>
-<td>Status Code</td>
-<td>Error Code</td>
+<td>error_status</td>
+<td>error_code</td>
 <td>Reserved</td>
 </tr>
 <tr>
-<td>Description</td>
-<td>Indicates failure</td>
-<td>Type of error</td>
-<td>Not used</td>
-</tr>
-<tr>
-<td>Data Type</td>
+<td>Variable Type</td>
 <td>uint8</td>
 <td>uint8</td>
 <td>uint8</td>
 </tr>
 <tr>
-<td>Example Value</td>
-<td>0xFF</td>
+<td>Min Value</td>
+<td>0xFE</td>
 <td>0x01</td>
 <td>0</td>
 </tr>
 <tr>
-<td>Notes</td>
-<td>Error handling</td>
-<td>See table below</td>
-<td>Set to 0</td>
+<td>Max Value</td>
+<td>0xFF</td>
+<td>0x05</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>0xFF</td>
+<td>0x03</td>
+<td>0</td>
 </tr>
 </tbody>
 </table>
