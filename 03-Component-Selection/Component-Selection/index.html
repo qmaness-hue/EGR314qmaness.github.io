@@ -1156,11 +1156,16 @@
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../IFX9201SGAUMA1.png" data-desc-position="bottom"><img alt="" src="../IFX9201SGAUMA1.png"></a><br> IFX9201SGAUMA1 Surface Mount Driver<br>$3.55/each<br><a href="https://www.digikey.com/en/products/detail/infineon-technologies/IFX9201SGAUMA1/5415542">link to product</a></td>
 <td>* Works with PIC <br>* Works with stepper motor <br>* Uses SPI or PWM <br>* We already have it</td>
-<td>* Difficult to use with MPLAB</td>
+<td>* Difficult to use with MPLAB <br>* DOES NOT WORK WITH BOTH PIC AND MOTOR SIMULTANEOUSLY</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="TMC2209.png" data-desc-position="bottom"><img alt="" src="TMC2209.png"></a><br> TMC2209 Surface Mount Driver<br>$5.20/each<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/TMC2209-LA-T/10232491">link to product</a></td>
+<td>* Works with PIC <br>* Works with stepper motor <br>* Uses UART and simple GPIO connections <br>* Compatible, simultaneously, with chosen PIC and Motor</td>
+<td>* More complex device than others</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Rationale:</strong> The IFX9201SGAUMA1 driver is easily accessible (thanks to it already being part of the class), works with the selected motor, and is highly adjustable.</p>
+<p><strong>Rationale:</strong> The TMC2209 is simultaneously compatible with the selected motor, and the PIC; it offers ease of adjustment, and uses only GPIO pins unless the user wants to program it with UART (uneccessary).</p>
 
 
 
