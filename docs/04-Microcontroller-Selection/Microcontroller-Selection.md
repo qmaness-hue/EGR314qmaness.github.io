@@ -12,7 +12,7 @@ The role of this subsystem of the EV Scope is to accurately recieve instruction 
 
 ## Selected Microcontroller
 
-The microcontroller I selected for the motor system is the PIC18F57Q43, a microcontroller provided in class. The motor driver and gearmotor I selected are compatible with the PIC18F57Q43. The motor driver I selected--the IFX9201SGAUMA1--utilizes the SPI interface. This interface is covered in depth during class, making it a well understood software. All parameters appear to match up, as I did the component selection with the microcontroller given in class in mind.
+The microcontroller I selected for the motor system is the PIC18F57Q43, a microcontroller provided in class. The motor driver and gearmotor I selected are compatible with the PIC18F57Q43. The motor driver I selected--the TMC2209--utilizes the GPIO and UART (uneccessary) interface. The UART with MPLAB interface is covered in depth during class, making it a well understood software. All parameters appear to match up, as I did the component selection with the microcontroller given in class in mind.
 
 **MPLAB Pin Configuration**
 ![](TQFP48.png)
@@ -27,7 +27,7 @@ The selected motor driver is compatible with the selected PIC18F57Q43 microcontr
 
 | **Pin**                                                   | **Pin Function**                                                                                         | **Connection**                                                                                                       |
 | -------------------------- | -------------------------------------------------------- | ------------------------------------------------------- |
-| Pin 1 (DIR) | Defines direction of motor current | PIC GPIO RC2 |
+| Pin 1 (OB2) | Motor Coil B Output 2 | Motor |
 | Pin 2 (VSO) | Supply for SO Output | Voltage Regulator |
 | Pin 3 (SO) | SPI Serial Output | RC4 / SDI1 |
 | Pin 4 (VS) | Voltage Supply | Voltage Regulator |
