@@ -28,17 +28,34 @@ The selected motor driver (TMC2209) is compatible with the selected PIC18F57Q43 
 | **Pin**                                                   | **Pin Function**                                                                                         | **Connection**                                                                                                       |
 | -------------------------- | -------------------------------------------------------- | ------------------------------------------------------- |
 | Pin 1 (OB2) | Motor Coil B Output 2 | Motor |
-| Pin 2 (VSO) | Supply for SO Output | Voltage Regulator |
-| Pin 3 (SO) | SPI Serial Output | RC4 / SDI1 |
-| Pin 4 (VS) | Voltage Supply | Voltage Regulator |
-| Pin 5 (OUT1) | Output 1 | Motor |
-| Pin 6 (GND) | Ground | Ground |
-| Pin 7 (OUT2) | Output 2 | Not Connected |
-| Pin 8 (SI) | Serial Input | RB1 / SDO1 |
-| Pin 9 (CSN) | SPI Chip Select | Not Connected |
-| Pin 10 (SCK) | Clock Input | RC3 / SCK1 |
-| Pin 11 (DIS) | Disables outputs | Not Connected |
-| Pin 12 (PWM) | Pulse Width Modulation | Not Connected |
+| Pin 2 (ENN) | Enable not input | Not Connected |
+| Pin 3 (GND1) | Ground 1 | Ground |
+| Pin 4 (CPO) | Charge pump capacitor output | CPI |
+| Pin 5 (CPI) | Charge pump capacitor input | CPO |
+| Pin 6 (VCP) | Charge pump voltage | VS |
+| Pin 7 (SPREAD) | Chopper mode selection | Not Connected |
+| Pin 8 (5VOUT) | Output of internal voltage regulator | GND1 |
+| Pin 9 (MS1_AD0) | Microstep resolution configuration | Ground |
+| Pin 10 (MS2_AD1) | Microstep resolution configuration | Ground |
+| Pin 11 (DIAG) | Diagnostic output (HIGH = error) | GPIO RD2 |
+| Pin 12 (INDEX) | Provides index pulse | Not Connected |
+| Pin 13 (CLK) | Clock input | Ground |
+| Pin 14 (PDN_UART) | Optional UART Input/Output | UART3 RF1 |
+| Pin 15 (VCC_IO) | Supply voltage for digital pins | Voltage Regulator |
+| Pin 16 (STEP) | STEP input | GPIO RF0 |
+| Pin 17 (VREF) | Analog reference voltage | Not Connected |
+| Pin 18 (GND2) | Ground 2 | Ground |
+| Pin 19 (DIR) | Direction input | GPIO RA6 |
+| Pin 20 (STDBY) | Standby input | Ground |
+| Pin 21 (OA2) | Motor Coil A Output 2 | Motor |
+| Pin 22 (VS) | Voltage supply for motor | Voltage Regulator |
+| Pin 23 (BRA) | Sense resistor connection for coil A | Ground |
+| Pin 24 (OA1) | Motor Coil A Output 1 | Motor |
+| Pin 25 (NC) | Unused | Not Connected |
+| Pin 26 (OB1) | Motor Coil B Output 1 | Motor |
+| Pin 27 (BRB) | Sense resistor connection for coil B | Ground |
+| Pin 28 (VS) | Voltage supply for motor | Voltage Regulator |
+| Pin 29 (EPAD) | Exposed die pad | Ground |
 
 **Pinout for Driver 2**
 
