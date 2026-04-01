@@ -17,11 +17,11 @@ The microcontroller I selected for the motor system is the surface mount version
 **MPLAB Pin Configuration**
 ![](TQFP48.png)
 
-The selected motor driver is compatible with the selected PIC18F57Q43 microcontroller. In the figure above, you can see all allocations needed for SPI communications between the drivers and the microcontoller.
+The selected motor driver (TMC2209) is compatible with the selected PIC18F57Q43 microcontroller. In the figure above, you can see all allocations needed for communications between the drivers, LEDs, and the debugging button with the PIC.
 
 ## Driver-Microcontoller Communications
-**Pinout for IFX9201SGAUMA1**
-![](IFX9201SGAUMA1pinout.png)
+**Pinout for TMC2209**
+![](TMC2209_pinout.png)
 
 **Pinout for Driver 1**
 
