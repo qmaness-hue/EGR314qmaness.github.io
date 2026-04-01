@@ -1238,64 +1238,149 @@
 </thead>
 <tbody>
 <tr>
-<td>Pin 1 (DIR)</td>
-<td>Defines direction of motor current</td>
-<td>PIC GPIO RB2</td>
+<td>Pin 1 (OB2)</td>
+<td>Motor Coil B Output 2</td>
+<td>Motor</td>
 </tr>
 <tr>
-<td>Pin 2 (VSO)</td>
-<td>Supply for SO Output</td>
-<td>Voltage Regulator</td>
+<td>Pin 2 (ENN)</td>
+<td>Enable not input</td>
+<td>Not Connected</td>
 </tr>
 <tr>
-<td>Pin 3 (SO)</td>
-<td>SPI Serial Output</td>
-<td>RB4 / SDI2</td>
-</tr>
-<tr>
-<td>Pin 4 (VS)</td>
-<td>Voltage Supply</td>
-<td>Voltage Regulator</td>
-</tr>
-<tr>
-<td>Pin 5 (OUT1)</td>
-<td>Output 1</td>
-<td>Motor 2</td>
-</tr>
-<tr>
-<td>Pin 6 (GND)</td>
-<td>Ground</td>
+<td>Pin 3 (GND1)</td>
+<td>Ground 1</td>
 <td>Ground</td>
 </tr>
 <tr>
-<td>Pin 7 (OUT2)</td>
-<td>Output 2</td>
+<td>Pin 4 (CPO)</td>
+<td>Charge pump capacitor output</td>
+<td>CPI</td>
+</tr>
+<tr>
+<td>Pin 5 (CPI)</td>
+<td>Charge pump capacitor input</td>
+<td>CPO</td>
+</tr>
+<tr>
+<td>Pin 6 (VCP)</td>
+<td>Charge pump voltage</td>
+<td>VS</td>
+</tr>
+<tr>
+<td>Pin 7 (SPREAD)</td>
+<td>Chopper mode selection</td>
 <td>Not Connected</td>
 </tr>
 <tr>
-<td>Pin 8 (SI)</td>
-<td>Serial Input</td>
-<td>RB5 / SDO2</td>
+<td>Pin 8 (5VOUT)</td>
+<td>Output of internal voltage regulator</td>
+<td>GND1</td>
 </tr>
 <tr>
-<td>Pin 9 (CSN)</td>
-<td>SPI Chip Select</td>
+<td>Pin 9 (MS1_AD0)</td>
+<td>Microstep resolution configuration</td>
+<td>Ground</td>
+</tr>
+<tr>
+<td>Pin 10 (MS2_AD1)</td>
+<td>Microstep resolution configuration</td>
+<td>Ground</td>
+</tr>
+<tr>
+<td>Pin 11 (DIAG)</td>
+<td>Diagnostic output (HIGH = error)</td>
+<td>GPIO RD2</td>
+</tr>
+<tr>
+<td>Pin 12 (INDEX)</td>
+<td>Provides index pulse</td>
 <td>Not Connected</td>
 </tr>
 <tr>
-<td>Pin 10 (SCK)</td>
-<td>Clock Input</td>
-<td>RB3 / SCK2</td>
+<td>Pin 13 (CLK)</td>
+<td>Clock input</td>
+<td>Ground</td>
 </tr>
 <tr>
-<td>Pin 11 (DIS)</td>
-<td>Disables outputs</td>
+<td>Pin 14 (PDN_UART)</td>
+<td>Optional UART Input/Output</td>
+<td>UART3 RF1</td>
+</tr>
+<tr>
+<td>Pin 15 (VCC_IO)</td>
+<td>Supply voltage for digital pins</td>
+<td>Voltage Regulator</td>
+</tr>
+<tr>
+<td>Pin 16 (STEP)</td>
+<td>STEP input</td>
+<td>GPIO RF0</td>
+</tr>
+<tr>
+<td>Pin 17 (VREF)</td>
+<td>Analog reference voltage</td>
 <td>Not Connected</td>
 </tr>
 <tr>
-<td>Pin 12 (PWM)</td>
-<td>Pulse Width Modulation</td>
+<td>Pin 18 (GND2)</td>
+<td>Ground 2</td>
+<td>Ground</td>
+</tr>
+<tr>
+<td>Pin 19 (DIR)</td>
+<td>Direction input</td>
+<td>GPIO RA6</td>
+</tr>
+<tr>
+<td>Pin 20 (STDBY)</td>
+<td>Standby input</td>
+<td>Ground</td>
+</tr>
+<tr>
+<td>Pin 21 (OA2)</td>
+<td>Motor Coil A Output 2</td>
+<td>Motor</td>
+</tr>
+<tr>
+<td>Pin 22 (VS)</td>
+<td>Voltage supply for motor</td>
+<td>Voltage Regulator</td>
+</tr>
+<tr>
+<td>Pin 23 (BRA)</td>
+<td>Sense resistor connection for coil A</td>
+<td>Ground</td>
+</tr>
+<tr>
+<td>Pin 24 (OA1)</td>
+<td>Motor Coil A Output 1</td>
+<td>Motor</td>
+</tr>
+<tr>
+<td>Pin 25 (NC)</td>
+<td>Unused</td>
 <td>Not Connected</td>
+</tr>
+<tr>
+<td>Pin 26 (OB1)</td>
+<td>Motor Coil B Output 1</td>
+<td>Motor</td>
+</tr>
+<tr>
+<td>Pin 27 (BRB)</td>
+<td>Sense resistor connection for coil B</td>
+<td>Ground</td>
+</tr>
+<tr>
+<td>Pin 28 (VS)</td>
+<td>Voltage supply for motor</td>
+<td>Voltage Regulator</td>
+</tr>
+<tr>
+<td>Pin 29 (EPAD)</td>
+<td>Exposed die pad</td>
+<td>Ground</td>
 </tr>
 </tbody>
 </table>
