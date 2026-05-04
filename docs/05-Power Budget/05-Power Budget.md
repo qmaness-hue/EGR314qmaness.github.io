@@ -15,4 +15,4 @@ The power budget in [Figure 1](PowerBudget2.pdf) shows, through reference to the
 
 [This](PowerBudget2.pdf) is the PDF file of the power budget.
 
-[This](PowerBudget2_314.zip) is the zip file containing all of the above files.
+[This](PowerBudget_2_314.zip) is the zip file containing all of the above files.
