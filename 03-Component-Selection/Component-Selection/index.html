@@ -681,6 +681,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#summary-of-selected-major-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Selected Major Components
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1040,6 +1049,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#summary-of-selected-major-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Selected Major Components
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1166,6 +1184,33 @@
 </tbody>
 </table>
 <p><strong>Rationale:</strong> The TMC2209 is simultaneously compatible with the selected motor, and the PIC; it offers ease of adjustment, and uses only GPIO pins unless the user wants to program it with UART (uneccessary).</p>
+<h3 id="summary-of-selected-major-components">Summary of Selected Major Components</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Rationale</strong></th>
+<th><strong>Later Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../LM2575.png" data-desc-position="bottom"><img alt="" src="../LM2575.png"></a><br> LM2575 Voltage Regulator<br>$2.16/each<br><a href="https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688">link to product</a></td>
+<td>* Perfectly adequate regulator that the class already has experience using.</td>
+<td>*Requires a 100uH inductor for 5 volts</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../324.png" data-desc-position="bottom"><img alt="" src="../324.png"></a><br> 324 Stepper Motor <br>$14.00/each<br><a href="https://www.digikey.com/en/products/detail/adafruit-industries-llc/324/5022791">link to product</a></td>
+<td>* Simple motor capable of maintaining a high torque with easily optimized accuracy</td>
+<td>* Requires a minimum of 12 volts to function, with 9 volts allowing for only subtle movement</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../TMC2209.png" data-desc-position="bottom"><img alt="" src="../TMC2209.png"></a><br> TMC2209 Surface Mount Motor Driver<br>$5.20/each<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/TMC2209-LA-T/10232491">link to product</a></td>
+<td>* Works with both the microcontoller and stepper motors chosen</td>
+<td>* N/A</td>
+</tr>
+</tbody>
+</table>
 
 
 
